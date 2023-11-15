@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List with API</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/d75cdddc11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 登入頁面 -->
+    <div class="login_page active">
+        <div class="container">
+            <div class="left_container"> 
+                <div class="title web_title">
+                    <span><i class="fa-solid fa-square-check fa-2xl fa-rotate-by" ></i></span>
+                    <h1>ONLINE TODO LIST</h1>
+                </div>
+                <img src="/asset/img_1.png" alt="" width="386" height="386" class="img_1">
+            </div>
+            <div class="right_container">
+                <div class="form">
+                    <div class="title mobile_title">
+                        <span><i class="fa-solid fa-square-check fa-2xl fa-rotate-by" ></i></span>
+                        <h1>ONLINE TODO LIST</h1>
+                    </div>
+                    <h3>最實用的線上待辦事項服務</h3>
+                    <div class="input_group">
+                        <div class="input">
+                            <label for="login_email">Email</label>
+                            <input type="text" id="login_email" placeholder="請輸入Email">
+                            <p class="error_txt"></p>  
+                        </div>
+                        <div class="input">
+                            <label for="login_password">密碼</label>
+                            <input type="text" id="login_password" placeholder="請輸入密碼">
+                            <p class="error_txt"></p>
+                        </div>
+                    </div>
+                    <div class="btn_container">
+                        <button class="login_btn">登入</button>
+                    </div>
+                    <div class="btn_container">
+                        <a href="" class="switch_to_signup">註冊帳號</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 註冊頁面 -->
+    <div class="signup_page ">
+        <div class="container">
+            <div class="left_container"> 
+                <div class="title">
+                    <span><i class="fa-solid fa-square-check fa-2xl fa-rotate-by" ></i></span>
+                    <h1>ONLINE TODO LIST</h1>
+                </div>
+                <img src="/asset/img_1.png" alt="" width="386" height="386" class="img_1">
+            </div>
+            <div class="right_container">
+                <form class="form">
+                    <div class="title mobile_title">
+                        <span><i class="fa-solid fa-square-check fa-2xl fa-rotate-by" ></i></span>
+                        <h1>ONLINE TODO LIST</h1>
+                    </div>
+                    <h3>註冊帳號</h3>
+                    <div class="input_group">
+                        <div class="input">
+                            <label for="signup_email">Email</label>
+                            <input type="text" id="signup_email" placeholder="請輸入Email" required>
+                            <p class="error_txt"></p>
+                        </div>
+                        
+                        <div class="input">
+                            <label for="signup_name">您的暱稱</label>
+                            <input type="text" id="signup_name" placeholder="請輸入您的暱稱" required>
+                            <p class="error_txt"></p>
+                        </div>
+                        <div class="input">
+                            <label for="signup_password">密碼</label>
+                            <input type="text" id="signup_password" placeholder="請輸入密碼" required>
+                            <p class="error_txt"></p>
+                        </div>
+                        <div class="input">
+                            <label for="signup_password_2">再次輸入密碼</label>
+                            <input type="text" id="ignin_password_2" placeholder="請再次輸入密碼" required>
+                            <p class="error_txt"></p>
+                        </div>
+                    </div>
+                    <div class="btn_container">
+                        <button type="submit" class="signup_btn" >註冊帳號</button>
+                    </div>
+                    <div class="btn_container">
+                        <a href="" class="switch_to_login">登入</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 待辦事項頁面 -->
+    <div class="todolist_page">
+        <div class="header">
+            <div class="title todo_web_title">
+                <span><i class="fa-solid fa-square-check fa-xl fa-rotate-by" ></i></span>
+                <h1>ONLINE TODO LIST</h1>
+            </div>
+            <div class="user_account">
+                <span class="user_name">王曉明的代辦</span>
+                <button class="logout_btn">登出</button>
+            </div>
+        </div>
+        <div class="todo_input_container">
+            <label for="todo_input" class="todo_input_box">
+                <input type="text" class="todo_input" id="todo_input" placeholder="新增代辦事項">
+                <button class="add_todo_btn">+</button>
+            </label>
+        </div>
+        <div class="todo_list_result">
+            <div class="todo_list_container  " >
+                <div class="todo_list_box">
+                    <ul class="tabs">
+                        <li class="tab_li tab_active" id="tab_all">全部</li>
+                        <li class="tab_li " id="tab_unchecked">待完成</li>
+                        <li class="tab_li " id="tab_checked">已完成</li>
+                    </ul>
+                    <div class="todo_list">
+                        <ul class="todo_ul">
+                            <li class="todo_li">
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span>把發霉的檸檬拿去丟</span>
+                                    
+                                </label>
+                                <i class="fa-solid fa-xmark delete_btn" ></i>
+                            </li>
+                            <li class="todo_li">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>做縫紉功課</span>
+                                </label>
+                                <i class="fa-solid fa-xmark delete_btn" ></i>
+                            </li>
+                            <li class="todo_li">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>整理照片</span>
+                                </label>
+                                <i class="fa-solid fa-xmark delete_btn" ></i>
+                            </li>
+                            <li class="todo_li">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>明天四點攀岩</span>
+                                </label>
+                                <i class="fa-solid fa-xmark delete_btn" ></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <p class="show_unchecked">5個待完成項目</p>
+                        <button class="delete_checked">清除已完成項目</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="no_todo_container ">
+                <div class="no_todo">
+                    <p class="no_todo_text">目前尚無待辦事項</p>
+                    <img src="./asset/img_2.png" alt="" height="250px" width="240px">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./all.js"></script>
+</body>
+</html>

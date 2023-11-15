@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600, 700");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100vw;
+}
+
+body{
+    background: #FFD370;
+    font-family: "Noto Sans TC";
+    letter-spacing: 0.07em;
+    
+}
+
+.title{
+    display: flex;
+    margin: 16px;
+}
+
+.mobile_title{
+    display: none;
+}
+
+i{
+    padding: 12px;
+    color: #333;
+}
+
+.fa-square-check{
+    margin-top: 12px;
+}
+
+.fa-rotate-by{
+    rotate: 350deg;
+}
+
+h1{
+    font-family: "Baloo Tamma 2";
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #333333; 
+}
+
+.input_group{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.27px;
+    color: #333333;
+    display: block;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.75px;
+    color: #333333;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+
+.error_txt{
+    color: #D87355;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;  /* 要加100vh align-items 才會致中 */
+    align-items: center;
+}
+
+.left_container{
+    height: 448px;
+    width: 386px;
+    margin: 88px 28px;
+}
+
+.right_container{
+    height: 448px;
+    width: 386px;
+    margin: 88px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    display: block;
+}
+
+.input_group input{
+    width: 320px;
+    height: 47px;
+    background-color: #fff;
+    padding: 12px 16px 12px 16px;
+    border-color: transparent;
+    border-radius: 10px;
+    margin: 4px 0px;
+}
+
+::placeholder {
+    color: #9F9A91;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* letter-spacing: 0.5px; */
+
+  }
+
+.input_group{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.input{
+    margin-bottom: 16px;
+}
+
+.btn_container{
+    display:flex;
+    justify-content: center;
+}
+
+.login_btn, .signup_btn{
+    background-color: #333333;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 12px 48px 12px 48px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23.17px;
+    margin: 12px;
+}
+
+.switch_to_signup, .switch_to_login{
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23.17px;
+    margin: 12px;
+}
+
+/* todolist */
+
+.todolist_page{
+    background-image: linear-gradient(174deg, #FFD370 50%, #fff 50%);
+    height: 100%;
+    width: 100%;
+    /* min-width: 375px; */
+}
+
+.todo_web_title h1{
+    font-size: 24px;
+}
+
+.header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 72px;
+    margin: 60px;
+}
+
+@media screen and (max-width:600px){
+    .header{
+        margin: 20px 10px;
+    }
+    
+}
+
+
+
+.user_name{
+    margin: 0px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    @media screen and (max-width:700px){
+        display: none;
+    }
+}
+
+.logout_btn{
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    padding: 16px;
+}
+
+@media  screen and (max-width:400px) {
+    .logout_btn{
+        padding: 8px;
+    }
+    
+}
+
+.todo_input_container{
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+}
+
+.todo_input_box{
+    background-color: #fff;
+    width: 500px;
+    height: 48px;
+    padding: 4px 8px 4px 16px;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.todo_input{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0px;
+    outline: 0;
+    font-size: 16px;
+}
+
+.add_todo_btn{
+    height: 40px;
+    width: 40px;
+    background-color: #333333;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 23.17px;
+}
+
+
+.todo_list_result{
+    display: flex;
+    justify-content: center;
+    margin: 0px 32px;
+}
+
+.todo_list_container{
+    display: flex;
+    justify-content: center;
+    margin: 0px 32px;
+}
+
+.todo_list_box{
+    /* position: relative;
+    left: 50%; */
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 8px 4px 16px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    /* @media  screen and (max-width:700px) {
+        width: 375px;
+    } */
+}
+
+
+
+@media  screen and (max-width:600px) {
+    .todo_input_box{
+        width: 311px;
+    }
+
+    .todo_list_box{
+        width: 311px;
+    }
+}
+
+
+.tabs{
+    color: #9F9A91;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 52px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tab_li{
+    padding: 16px;
+    width: 100%;  /* list寬度變成100%用法 */
+    text-align: center;
+}
+
+.tab_active{
+    color: #333;
+    border-bottom: solid 2px #333333;
+}
+
+
+
+.todo_list{
+    padding: 24px 12px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.todo_ul{
+    margin: 16px 0px;
+}
+
+.todo_li{
+    position: relative;
+    display: flex;
+}
+
+.checkbox{
+    position: relative;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-left: 44px;
+    cursor: pointer;
+
+    
+}
+
+.checkbox input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.delete_btn{
+    position: relative;
+    top: 50%;
+    color: #333;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.checkbox span{
+    width: 100%;
+    display: block;
+    padding: 16px 0px;
+    position: relative;
+    border-bottom: solid 1px #E5E5E5;
+    pointer-events: none;
+}
+
+.checkbox span::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid #9F9A91;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.checkbox span::after {
+    content: "";
+    position: absolute;
+    left: -34px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 0.5rem;
+    border-radius: 1px;
+    border-bottom: 3px solid #ffd370;
+    border-right: 3px solid #ffd370;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.checkbox input:checked {
+    ~ span {
+      color: #9f9a91;
+      text-decoration: line-through;
+    }
+    ~ span::before {
+      border-color: transparent;
+      transform: translateY(-50%) scale(0);
+    }
+    ~ span::after {
+      opacity: 1;
+    }
+  }
+
+/* footer */
+
+.footer{
+    position: relative;
+    display: flex;
+    margin: 32px 12px 32px 12px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.delete_checked{
+    background-color: transparent;
+    border: none;
+    color: #9F9A91;
+    cursor: pointer;
+}
+
+
+/* no todo */
+
+.no_todo_container{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.no_todo_text{
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+
+/* 頁面顯示切換 */
+
+.signup_page{
+    display: none;
+    min-width: 375px;
+}
+
+.login_page{
+    display: none;
+    min-width: 375px;
+}
+
+.todolist_page{
+    display: none;
+    min-width: 375px;
+}
+
+.todo_list_container{
+    display: none;
+}
+
+.no_todo_container{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left_container{
+        display: none;
+    }
+
+    .mobile_title{
+        display: flex;
+        margin: auto;
+    }
+
+    .right_container{
+        height: 100vh;  /* 要加100vh align-items 才會致中 */
+        width: 100vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+    }
+
+    .form{
+        margin: 48px 12px;
+    }
+
+    h3{
+        font-family: "Noto Sans TC";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28.96px;
+        color: #333333;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+  }
+
+
