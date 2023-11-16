@@ -62,7 +62,9 @@ signupBtn.addEventListener("click",function(e){
     signupInfo.name =  signupName.value;
     signupInfo.psw = signupPassword.value;
     signupInfo.psw2 = signupPassword2.value;
-    signupCheck();
+    if (signupCheck() == true) {
+        signup();
+    };
 })
 
 toLoginBtn.addEventListener("click",function(e){
@@ -80,24 +82,23 @@ function signupCheck(){
     // error check
     if(signupInfo.email ===""){
         errorTxts[2].textContent = "此欄不可為空"
-        return;
+        return false;
     }else if(signupInfo.name ===""){
         errorTxts[3].textContent = "此欄不可為空"
-        return;
+        return false;
     }else if(signupInfo.psw ===""){
         errorTxts[4].textContent = "此欄不可為空"
-        return;
+        return false;
     }else if(signupInfo.psw2 ===""){
         errorTxts[5].textContent = "此欄不可為空"
-        return;
+        return false;
     }else if(signupInfo.psw2 !== signupInfo.psw){
         errorTxts[5].textContent = "兩次輸入密碼不相同"
-        return;
-    }else{signup()}
-}
+        return false;
+    }
 
-function signup(){
-    axios.post(`${apiURL}/users`,{
+    return true;
+}
         "user": {
             "email": signupInfo.email,
             "nickname": signupInfo.name,
