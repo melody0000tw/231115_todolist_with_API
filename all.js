@@ -99,6 +99,9 @@ function signupCheck(){
 
     return true;
 }
+
+function signup() {
+    axios.post(`${apiURL}/users`, {
         "user": {
             "email": signupInfo.email,
             "nickname": signupInfo.name,
